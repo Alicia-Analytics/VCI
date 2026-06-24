@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Velvet Curtain Interpreting</title>
+<meta name="description" content="Book an ASL interpreter for your theatrical production. Contact Velvet Curtain Interpreting today.">
+<link rel="stylesheet" href="style.css">
+<style>
+.contact-grid {
+  margin-top: 3.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 6rem;
+  align-items: start;
+}
+@media (max-width: 760px) { .contact-grid { grid-template-columns: 1fr; gap: 3rem; } }
+.contact-left h3 {
+  font-family: var(--display);
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--cream);
+  margin-bottom: 0.8rem;
+}
+.contact-left p {
+  color: var(--cream-dim);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.75;
+}
+.contact-links { display: flex; flex-direction: column; gap: 0.9rem; margin-bottom: 2.5rem; }
+.contact-links a {
+  color: var(--gold-soft);
+  font-size: 1rem;
+  border-bottom: 1px solid transparent;
+  width: fit-content;
+  transition: border-color 0.2s;
+}
+.contact-links a:hover { border-color: var(--gold-soft); }
+.contact-note {
+  font-size: 0.85rem;
+  color: var(--cream-dim);
+  opacity: 0.7;
+  line-height: 1.6;
+  font-style: italic;
+  font-family: var(--display);
+}
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip">Skip to main content</a>
+
+<nav>
+  <a href="index.html" class="nav-logo">Velvet Curtain Interpreting</a>
+  <ul class="nav-links">
+    <li><a href="about.html">About</a></li>
+    <li><a href="why.html">Why VCI</a></li>
+    <li><a href="reviews.html">Reviews</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="gold-line"></div>
+
+<main id="main">
+  <div class="page-hero">
+    <span class="eyebrow">Get In Touch</span>
+    <h1>Let's bring your production<br>to <em>every audience member.</em></h1>
+    <p>Tell us about your show and we'll get back to you promptly. The earlier you reach out, the more preparation time we have — and preparation is everything.</p>
+  </div>
+
+  <div class="section">
+    <div class="contact-grid">
+      <div class="contact-left">
+        <h3>Reach us directly</h3>
+        <p>We're happy to answer questions about availability, rates, or how the process works before you commit to anything.</p>
+        <div class="contact-links">
+          <a href="mailto:access@velvetcurtaininterpreting.com">access@velvetcurtaininterpreting.com</a>
+          <a href="tel:+16514942533">(651) 494-2533</a>
+        </div>
+        <p class="contact-note">"The earlier you reach out, the better. Serious preparation takes time — and that preparation is what makes the difference for your Deaf audience members."<br><br>— Alicia Beinbrech, Founder</p>
+      </div>
+
+      <form action="https://formsubmit.co/access@velvetcurtaininterpreting.com" method="POST">
+        <input type="hidden" name="_subject" value="New inquiry — velvetcurtaininterpreting.com">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://velvetcurtaininterpreting.com/thanks.html">
+        <div class="field">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="field">
+          <label for="org">Theater / Organization</label>
+          <input type="text" id="org" name="organization">
+        </div>
+        <div class="field">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="field">
+          <label for="phone">Phone (optional)</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="field">
+          <label for="show">Show Title &amp; Dates</label>
+          <input type="text" id="show" name="show_details" placeholder="e.g. Anything Goes, July 12–20">
+        </div>
+        <div class="field">
+          <label for="message">Tell us about your production</label>
+          <textarea id="message" name="message" required placeholder="Venue, audience size, any specific needs or questions..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-filled" style="margin-top: 0.4rem;">Send Message</button>
+      </form>
+    </div>
+  </div>
+</main>
+
+<div class="gold-line"></div>
+
+<footer>
+  <span>&copy; 2026 Velvet Curtain Interpreting</span>
+  <span>Alicia Beinbrech, ASL Interpreter &mdash; Minneapolis, MN</span>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services | Velvet Curtain Interpreting</title>
+<meta name="description" content="ASL interpretation services for musical theater, plays, community productions, and more from Velvet Curtain Interpreting.">
+<link rel="stylesheet" href="style.css">
+<style>
+.services-list { margin-top: 3.5rem; }
+.svc-row {
+  display: grid;
+  grid-template-columns: 1.2fr 2fr auto;
+  gap: 2rem;
+  padding: 2.2rem 0;
+  border-bottom: 1px solid rgba(244,239,230,0.1);
+  align-items: start;
+}
+.svc-row:first-child { border-top: 1px solid rgba(244,239,230,0.1); }
+.svc-name {
+  font-family: var(--display);
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: var(--cream);
+  padding-top: 0.1rem;
+}
+.svc-desc { color: var(--cream-dim); font-size: 0.98rem; line-height: 1.65; }
+@media (max-width: 640px) {
+  .svc-row { grid-template-columns: 1fr; gap: 0.6rem; }
+  .svc-row a { align-self: start; }
+}
+
+.process {
+  margin-top: 5rem;
+  padding-top: 4rem;
+  border-top: 1px solid rgba(244,239,230,0.1);
+}
+.process-steps {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: rgba(244,239,230,0.08);
+}
+.step {
+  background: var(--navy);
+  padding: 2rem 1.6rem;
+}
+.step-num {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 2.4rem;
+  color: rgba(201,168,92,0.2);
+  line-height: 1;
+  margin-bottom: 0.8rem;
+}
+.step h4 {
+  font-family: var(--display);
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--cream);
+  margin-bottom: 0.5rem;
+}
+.step p { font-size: 0.9rem; color: var(--cream-dim); }
+@media (max-width: 700px) { .process-steps { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 400px) { .process-steps { grid-template-columns: 1fr; } }
+
+.cta-block {
+  margin-top: 5rem;
+  padding: 3.5rem;
+  border: 1px solid rgba(201,168,92,0.25);
+  background: rgba(201,168,92,0.04);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.cta-block h3 {
+  font-family: var(--display);
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: var(--cream);
+}
+.cta-block p { color: var(--cream-dim); margin-top: 0.4rem; }
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip">Skip to main content</a>
+
+<nav>
+  <a href="index.html" class="nav-logo">Velvet Curtain Interpreting</a>
+  <ul class="nav-links">
+    <li><a href="about.html">About</a></li>
+    <li><a href="why.html">Why VCI</a></li>
+    <li><a href="reviews.html">Reviews</a></li>
+    <li><a href="services.html" class="active">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="gold-line"></div>
+
+<main id="main">
+  <div class="page-hero">
+    <span class="eyebrow">Services</span>
+    <h1>Built for productions<br>of <em>every size.</em></h1>
+    <p>Whether you're running a full Broadway-style production or a community one-night showcase, we'll bring the same level of care and preparation to your stage.</p>
+  </div>
+
+  <div class="section">
+    <div class="services-list">
+      <div class="svc-row">
+        <span class="svc-name">Musical Theater</span>
+        <span class="svc-desc">Full interpretation of book, lyrics, and choreography for musical productions of any scale. We learn the score so the music lands as powerfully in ASL as it does in the air.</span>
+        <a href="contact.html" class="btn">Book</a>
+      </div>
+      <div class="svc-row">
+        <span class="svc-name">Plays &amp; Drama</span>
+        <span class="svc-desc">Nuanced interpretation that preserves the tone, pacing, and distinct voice of every character — including subtext, silence, and the moments between the lines.</span>
+        <a href="contact.html" class="btn">Book</a>
+      </div>
+      <div class="svc-row">
+        <span class="svc-name">Community &amp; Youth Theater</span>
+        <span class="svc-desc">Warm, encouraging interpretation that meets the energy of community and educational productions — making the stage accessible to every family in the audience.</span>
+        <a href="contact.html" class="btn">Book</a>
+      </div>
+      <div class="svc-row">
+        <span class="svc-name">Single Performances</span>
+        <span class="svc-desc">One designated accessible performance per run — fully prepared, fully immersive, and promoted to the Deaf community in your area.</span>
+        <a href="contact.html" class="btn">Book</a>
+      </div>
+      <div class="svc-row">
+        <span class="svc-name">Full Production Runs</span>
+        <span class="svc-desc">Ongoing ASL interpretation throughout your entire production run — consistent interpreters who grow with the show as it evolves night to night.</span>
+        <a href="contact.html" class="btn">Book</a>
+      </div>
+    </div>
+
+    <div class="process">
+      <span class="eyebrow">How It Works</span>
+      <h2>From first contact to opening night.</h2>
+      <div class="process-steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h4>Reach Out</h4>
+          <p>Tell us about your production — show title, dates, venue, and any specific needs.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h4>We Prepare</h4>
+          <p>Our interpreter studies the script, score, and staging — beginning weeks before the show.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h4>Rehearsal &amp; Coordination</h4>
+          <p>We coordinate with your production team to finalize positioning, lighting, and sightlines.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <h4>Opening Night</h4>
+          <p>Your interpreter takes the stage — prepared, confident, and ready to perform.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-block">
+      <div>
+        <h3>Let's talk about your production.</h3>
+        <p>The earlier you reach out, the more time we have to prepare.</p>
+      </div>
+      <a href="contact.html" class="btn btn-filled">Get In Touch</a>
+    </div>
+  </div>
+</main>
+
+<div class="gold-line"></div>
+
+<footer>
+  <span>&copy; 2026 Velvet Curtain Interpreting</span>
+  <span>Alicia Beinbrech, ASL Interpreter &mdash; Minneapolis, MN</span>
+</footer>
+
+</body>
+</html>

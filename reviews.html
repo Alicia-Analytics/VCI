@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reviews | Velvet Curtain Interpreting</title>
+<meta name="description" content="What theaters and audiences say about Velvet Curtain Interpreting's ASL theatrical interpretation services.">
+<link rel="stylesheet" href="style.css">
+<style>
+.reviews-grid {
+  margin-top: 3.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: rgba(244,239,230,0.08);
+}
+.review-card {
+  background: var(--navy);
+  padding: 2.6rem 2.2rem;
+  transition: background 0.25s;
+}
+.review-card:hover { background: rgba(201,168,92,0.04); }
+.review-mark {
+  font-family: var(--display);
+  font-size: 4rem;
+  line-height: 1;
+  color: rgba(201,168,92,0.2);
+  margin-bottom: 0.6rem;
+}
+.review-quote {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--cream);
+  line-height: 1.6;
+  margin-bottom: 1.4rem;
+}
+.review-by {
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+.review-by span {
+  color: var(--cream-dim);
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 0.85rem;
+}
+@media (max-width: 640px) {
+  .reviews-grid { grid-template-columns: 1fr; }
+}
+.add-note {
+  margin-top: 4rem;
+  padding: 2rem 2.4rem;
+  border: 1px dashed rgba(201,168,92,0.25);
+  font-size: 0.88rem;
+  color: var(--cream-dim);
+  line-height: 1.7;
+}
+.add-note strong { color: var(--gold-soft); font-weight: 500; }
+.add-note code {
+  display: block;
+  margin-top: 1rem;
+  background: rgba(244,239,230,0.05);
+  padding: 1rem 1.2rem;
+  font-size: 0.82rem;
+  color: var(--cream-dim);
+  white-space: pre;
+  overflow-x: auto;
+}
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip">Skip to main content</a>
+
+<nav>
+  <a href="index.html" class="nav-logo">Velvet Curtain Interpreting</a>
+  <ul class="nav-links">
+    <li><a href="about.html">About</a></li>
+    <li><a href="why.html">Why VCI</a></li>
+    <li><a href="reviews.html" class="active">Reviews</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="gold-line"></div>
+
+<main id="main">
+  <div class="page-hero">
+    <span class="eyebrow">Reviews</span>
+    <h1>What people say about<br><em>working with us.</em></h1>
+    <p>From theater coordinators to Deaf audience members — here's what the VCI experience looks like in practice.</p>
+  </div>
+
+  <div class="section">
+    <div class="reviews-grid">
+
+      <!-- REVIEW 1 — replace with real reviews as they come in -->
+      <div class="review-card">
+        <div class="review-mark">"</div>
+        <p class="review-quote">Our interpreter didn't just sign the words — they performed the show. Our Deaf patrons said it was the most immersive theater experience they'd ever had.</p>
+        <p class="review-by">Production Coordinator <span>— Community Theater</span></p>
+      </div>
+
+      <!-- REVIEW 2 -->
+      <div class="review-card">
+        <div class="review-mark">"</div>
+        <p class="review-quote">I could feel the music. I've never had an interpreter bring a musical to life like that before.</p>
+        <p class="review-by">Audience Member <span>— Musical Theater Patron</span></p>
+      </div>
+
+      <!-- ADD MORE REVIEWS HERE — copy the block above and paste it -->
+
+    </div>
+
+    <!-- This note is only visible to you when editing the file — remove it before publishing if you prefer -->
+    <div class="add-note">
+      <strong>Admin note (remove this block before publishing):</strong> To add a new review, copy the block below and paste it inside the reviews-grid div above. Fill in the quote, name, and title.<br>
+      <code>&lt;div class="review-card"&gt;
+  &lt;div class="review-mark"&gt;"&lt;/div&gt;
+  &lt;p class="review-quote"&gt;Their review text here.&lt;/p&gt;
+  &lt;p class="review-by"&gt;Their Name &lt;span&gt;— Their Title / Theater&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;</code>
+    </div>
+  </div>
+</main>
+
+<div class="gold-line"></div>
+
+<footer>
+  <span>&copy; 2026 Velvet Curtain Interpreting</span>
+  <span>Alicia Beinbrech, ASL Interpreter &mdash; Minneapolis, MN</span>
+</footer>
+
+</body>
+</html>

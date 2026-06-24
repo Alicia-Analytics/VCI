@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Velvet Curtain Interpreting | ASL Theatrical Interpretation</title>
+<meta name="description" content="Specialized ASL interpretation for theatrical productions. Velvet Curtain Interpreting brings artists, not generalists, to the stage.">
+<link rel="stylesheet" href="style.css">
+<style>
+/* HOME ONLY STYLES */
+.hero {
+  min-height: 100svh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+.hero-bg {
+  position: absolute; inset: 0;
+  background-image: url('https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?w=1800&q=80');
+  background-size: cover;
+  background-position: center 30%;
+  filter: brightness(0.42);
+  animation: slowZoom 18s ease-in-out infinite alternate;
+}
+@keyframes slowZoom {
+  from { transform: scale(1.0); }
+  to { transform: scale(1.06); }
+}
+.hero-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(8,15,26,0.15) 0%,
+    rgba(8,15,26,0.05) 35%,
+    rgba(8,15,26,0.6) 70%,
+    rgba(8,15,26,1) 100%
+  );
+}
+.hero-content {
+  position: relative; z-index: 2;
+  padding: 0 5vw 5rem;
+  max-width: 860px;
+}
+.hero-eyebrow {
+  font-size: 0.78rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1.2rem;
+  display: block;
+  opacity: 0;
+  animation: fadeUp 1s ease 0.2s forwards;
+}
+.hero h1 {
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: clamp(2.8rem, 6.5vw, 5.4rem);
+  line-height: 1.05;
+  color: var(--cream);
+  margin-bottom: 1.4rem;
+  opacity: 0;
+  animation: fadeUp 1s ease 0.4s forwards;
+}
+.hero h1 em {
+  font-style: italic;
+  font-weight: 600;
+  color: var(--gold-soft);
+  font-size: 1.08em;
+}
+.hero-sub {
+  font-size: clamp(1rem, 1.4vw, 1.15rem);
+  color: var(--cream-dim);
+  max-width: 52ch;
+  margin-bottom: 2.6rem;
+  opacity: 0;
+  animation: fadeUp 1s ease 0.6s forwards;
+}
+/* ACTION CARDS */
+.action-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  max-width: 580px;
+  opacity: 0;
+  animation: fadeUp 1s ease 0.8s forwards;
+}
+.action-card {
+  padding: 1.8rem 2rem;
+  border: 1px solid rgba(201,168,92,0.3);
+  background: rgba(8,15,26,0.55);
+  backdrop-filter: blur(6px);
+  transition: background 0.3s, border-color 0.3s;
+}
+.action-card:first-child { border-right: none; }
+.action-card:hover { background: rgba(201,168,92,0.1); border-color: var(--gold); }
+.action-card h3 {
+  font-family: var(--display);
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--cream);
+  margin-bottom: 0.4rem;
+}
+.action-card p {
+  font-size: 0.86rem;
+  color: var(--cream-dim);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+.card-link {
+  font-size: 0.76rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  display: flex; align-items: center; gap: 0.4rem;
+  transition: gap 0.2s;
+}
+.action-card:hover .card-link { gap: 0.7rem; }
+.card-link::after { content: '→'; }
+@media (max-width: 540px) {
+  .action-cards { grid-template-columns: 1fr; max-width: 100%; }
+  .action-card:first-child { border-right: 1px solid rgba(201,168,92,0.3); border-bottom: none; }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* UPCOMING SHOWS */
+.shows-strip {
+  background: var(--navy-deep);
+  padding: 4rem 5vw;
+}
+.shows-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.shows-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.shows-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: rgba(244,239,230,0.08);
+}
+.show-card {
+  background: var(--navy-deep);
+  padding: 1.8rem 1.6rem;
+  transition: background 0.25s;
+}
+.show-card:hover { background: rgba(201,168,92,0.05); }
+.show-date {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+.show-title {
+  font-family: var(--display);
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--cream);
+  margin-bottom: 0.3rem;
+}
+.show-venue {
+  font-size: 0.88rem;
+  color: var(--cream-dim);
+}
+.no-shows {
+  grid-column: 1 / -1;
+  padding: 2.5rem 0;
+  color: var(--cream-dim);
+  font-style: italic;
+  font-family: var(--display);
+  font-size: 1.1rem;
+}
+@media (max-width: 700px) {
+  .shows-grid { grid-template-columns: 1fr; }
+}
+
+/* HOME INTRO STRIP */
+.intro-strip {
+  padding: 5.5rem 5vw;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+.intro-strip blockquote {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
+  line-height: 1.4;
+  color: var(--cream);
+  border-left: 2px solid var(--gold);
+  padding-left: 1.6rem;
+}
+.intro-strip p {
+  color: var(--cream-dim);
+  font-size: 1.02rem;
+  margin-bottom: 1.4rem;
+}
+@media (max-width: 760px) {
+  .intro-strip { grid-template-columns: 1fr; gap: 2rem; }
+}
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip">Skip to main content</a>
+
+<div class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <nav class="over-hero">
+    <a href="index.html" class="nav-logo">Velvet Curtain Interpreting</a>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="why.html">Why VCI</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <main id="main">
+    <div class="hero-content">
+      <span class="hero-eyebrow">Velvet Curtain Interpreting</span>
+      <h1>A <em>fully immersive</em><br>theatrical experience<br>for every audience.</h1>
+      <p class="hero-sub">Specialized American Sign Language interpretation for the stage — where language performs alongside every actor, note, and moment.</p>
+      <div class="action-cards">
+        <a href="contact.html" class="action-card">
+          <h3>Book an Interpreter</h3>
+          <p>Bring ASL interpretation to your next production.</p>
+          <span class="card-link">Get in touch</span>
+        </a>
+        <a href="about.html" class="action-card">
+          <h3>About VCI</h3>
+          <p>Learn what makes us different from a general agency.</p>
+          <span class="card-link">Our story</span>
+        </a>
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- UPCOMING SHOWS -->
+<div class="shows-strip">
+  <div class="shows-inner">
+    <div class="shows-header">
+      <div>
+        <span class="eyebrow">On the Calendar</span>
+        <h2>Upcoming Shows</h2>
+      </div>
+      <a href="services.html" class="btn">All Services</a>
+    </div>
+    <div class="shows-grid">
+      <!-- ADD SHOWS HERE — copy a show-card block and fill in details -->
+      <!-- Example:
+      <div class="show-card">
+        <p class="show-date">July 12, 2026</p>
+        <p class="show-title">Anything Goes</p>
+        <p class="show-venue">Minnewaska Showstoppers</p>
+      </div>
+      -->
+      <p class="no-shows">More shows coming soon — check back for upcoming interpreted performances.</p>
+    </div>
+  </div>
+</div>
+
+<div class="gold-line"></div>
+
+<!-- HOME INTRO -->
+<div class="intro-strip">
+  <blockquote>"Just because you can interpret for a doctor doesn't mean you can interpret a show."</blockquote>
+  <div>
+    <p>Velvet Curtain Interpreting was created with a single purpose: to bring world-class ASL interpretation to live theater. Not as one service among many — as the entire mission.</p>
+    <p>Our interpreters are artists. They come to every production prepared, passionate, and ready to perform alongside the cast.</p>
+    <a href="about.html" class="btn">Learn More About VCI</a>
+  </div>
+</div>
+
+<div class="gold-line"></div>
+
+<footer>
+  <span>&copy; 2026 Velvet Curtain Interpreting</span>
+  <span>Alicia Beinbrech, ASL Interpreter &mdash; Minneapolis, MN</span>
+</footer>
+
+</body>
+</html>
