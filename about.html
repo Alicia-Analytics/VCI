@@ -59,12 +59,18 @@
   margin-bottom: 0.5rem;
 }
 .value-item p { color: var(--cream-dim); font-size: 0.96rem; }
-  .about-photo-wrap img {
+ .about-banner {
   width: 100%;
-  aspect-ratio: 3/4;
+  height: 420px;
+  overflow: hidden;
+}
+.about-banner img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  margin-bottom: 1.8rem;
+  object-position: center;
   filter: brightness(0.75);
+}
 }
   
 </style>
@@ -87,6 +93,9 @@
 <div class="gold-line"></div>
 
 <main id="main">
+<div class="about-banner">
+  <img src="your-image-name.jpg" alt="ASL interpreter performing on stage">
+</div>
   <div class="page-hero">
     <span class="eyebrow">Our Story</span>
     <h1>Founded for the stage,<br>not the <em>waiting room.</em></h1>
@@ -94,10 +103,8 @@
   </div>
 
   <div class="section">
-    <div class="about-grid">
-<div class="about-photo-wrap">
-  <img src="about-stage.jpg" alt="Dramatic theater stage with warm golden lighting">
-  <p class="about-pull">"Just because you can interpret for a doctor doesn't mean you can interpret a show."</p>
+    <p class="about-pull">Connect with other provesionals who have a passion for the performing arts just like you.</p>
+
 </div>
       <div class="about-body">
 
