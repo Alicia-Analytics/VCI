@@ -218,24 +218,25 @@
 /* UNIFIED MOBILE FIX */
 @media (max-width: 768px) {
   .hero {
-    justify-content: flex-start; /* Pushes content from the top down */
-    min-height: auto; /* Allows the hero section to expand naturally for the text */
+    justify-content: flex-start;
+    min-height: auto;
     padding-bottom: 3rem;
+  }
 
   .over-hero {
-    position: relative; /* Sits naturally at the top */
+    position: relative;
     flex-direction: column;
     gap: 1.2rem;
     padding: 2rem 1rem;
     text-align: center;
-    background: rgba(8, 15, 26, 0.95); /* Velvet backdrop */
+    background: rgba(8, 15, 26, 0.95);
     width: 100%;
     z-index: 10;
   }
 
   .hero-content {
     position: relative;
-    padding: 3rem 5vw 1rem; /* Forces the headline down below the menu */
+    padding: 4rem 5vw 1rem; /* Generous space to push the headline down */
     margin-top: 0;
   }
 
@@ -261,7 +262,6 @@
     border-bottom: none;
   }
 }
-
 </style>
 </head>
 <body>
