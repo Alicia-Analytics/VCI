@@ -215,18 +215,25 @@
 @media (max-width: 760px) {
   .intro-strip { grid-template-columns: 1fr; gap: 2rem; }
 }
-  /* MOBILE NAVIGATION FIX */
+ /* MOBILE NAVIGATION FIX */
 @media (max-width: 768px) {
+  .hero {
+    justify-content: flex-start; /* Moves the header text down so it doesn't fight the menu */
+  }
+
   .over-hero {
+    position: relative; /* This pulls it out from behind the text so it sits cleanly at the top! */
     flex-direction: column;
-    gap: 1.5rem;
-    padding: 1.5rem 1rem;
+    gap: 1.2rem;
+    padding: 2rem 1rem;
     text-align: center;
+    background: rgba(8, 15, 26, 0.9); /* Adds a subtle dark backdrop so the text is incredibly crisp over the image */
+    width: 100%;
   }
 
   .nav-links {
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 1rem;
     padding: 0;
     width: 100%;
   }
@@ -237,8 +244,13 @@
 
   .nav-links a {
     display: block;
-    padding: 0.5rem 0;
-    font-size: 1.1rem; /* Makes them easier to tap with a thumb */
+    padding: 0.6rem 0;
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgba(244, 239, 230, 0.1); /* Adds a delicate divider line between buttons */
+  }
+  
+  .nav-links li:last-child a {
+    border-bottom: none; /* Removes the line from the final button */
   }
 }
 </style>
